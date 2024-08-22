@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* Variables */
+:root {
+    --fondo: #F3F5FC;
+    --white: #FFFFFF;
+    --azul300: #0A3871;
+    --azul200: #356EA9;
+    --gray400: #495057;
+    --gray500: #343A40;
+    --fuentePrincipal: "Inter", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: mandatory;
+}
+body {
+    font-size: 16px;
+    background-color: var(--fondo);
+    font-family: var(--fuentePrincipal);
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+.boton {
+    border-radius: 2.4rem;
+    width: 100%;
+    height: 6.7rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    transition: background-color 0.3s;
+}
+.contenedor_header {
+    display: flex;
+    height: 9.6rem;
+
+}
+.header_logo {
+    display: flex;
+    padding: 2.4rem;
+}
+.contenedor_main {
+    padding: 4rem;
+    width: 100%;
+}
+
+.logo {
+    width: 3rem;
+    height: 4.5rem;
+
+}
+.texto {
+    width: 100%;
+    height: auto;
+    max-height: 50rem;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    resize: none;
+    background-color: var(--fondo);
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: var(--azul300);
+    padding: 10rem 1.6rem;
+}
+.texto::placeholder {
+    color: var(--azul300);
+    font-size: 3.6rem;
+    font-weight: 500;
+    text-align: start;
+}
+.info {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    height: 100%;
+}
+
+.alerta {
+    align-self: center;
+    height: 16px;
+    width: 16px;
+}
+.p_info {
+    color: var(--gray400);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.contenedor_botones {
+    padding-bottom: 6.4rem;
+}
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.encriptar {
+    background-color: var(--azul300);
+    color: var(--white);
+}
+.encriptar:hover {
+    background-color: #022551;
+    cursor: pointer;
+}
+.desencriptar {
+    background-color: transparent;
+    color: var(--azul300);
+}
+.desencriptar:hover {
+    background-color: #dededf;
+    cursor: pointer;
+}
+.copiar {
+    background-color: var(--white);
+    color: var(--azul300);
+    font-weight: 500;
+    border: 2px solid var(--azul300);
+    width: 80%;
+    display: none;
+    align-self: center;
+    margin-bottom: 2rem;
+}
+.copiar:hover {
+    background-color: #dededf;
+    cursor: pointer;
+}
+.contenedor_respuesta {
+    display: flex;
+    flex-direction: column;
+    padding: 6.4rem 0 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    border-radius: 3.2rem;
+    text-align: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.parrafo_respuesta {
+    padding:  0 3rem 0;
+}
+.muñeco {
+    display: none;
+}
+
+.respuesta {
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: var(--gray500);
+    padding: 0 3.2rem 0;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    resize: none;
+    height: 10rem;
+}
+.respuesta::placeholder {
+    text-align: center;
+    
+}
+
+footer {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem 0;
+    
+}
+.logo_footer {
+    height: 1.6rem;
+    width: 1.6rem;
+}
+.enlaces {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--azul300);
+    transition: transform 0.3s ease;
+}
+.enlaces:hover {
+    transform: scale(1.2);
+}
+    /* MediaQueries  */
+
+@media (min-width: 992px) {
+    .contenedor_main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 8rem;
+        height: 95rem;
+    }
+    .contenedor_botones {
+        margin-top: 18rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .contenedor_respuesta {
+        max-width: 40rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .botones{
+        display: flex;
+        flex-direction: row;
+        gap: 2.4rem;   
+    }
+    .copiar {
+        width: 60%;
+    }
+
+}
+
+@media (min-width: 992px){
+    .muñeco {
+    display: block;
+    align-self: center;
+    width: 33rem;
+    height: 30rem;  
+    }
+    .copiar {
+        margin-top: 165%;
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px){
+    .contenido_izquierda {
+        display: flex;
+        flex-direction: column;
+        max-width: 100rem;
+    }
+}

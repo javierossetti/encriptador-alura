@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header class="contenedor_header">
+        <div class="header_logo">
+            <a href=""></a>
+            <img class="logo" src="/src/img/logo.png" alt="Logo Alura">
+        </div>
+    </header>
+    <main class="contenedor_main">
+        <section class="contenido_izquierda">
+            <textarea class="texto" cols="10" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+
+            <div class="contenedor_botones">
+                <div class="info">
+                    <img class="alerta" src="/src/img/alerta.png" alt="Simbolo Alerta">
+                    <p class="p_info">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botones">                    
+                    <button id="encriptar" class="encriptar boton">Encriptar</button>
+                    <button id="desencriptar" class="desencriptar boton">Desencriptar</button>
+                </div>
+            </div>
+            
+        </section>
+        <section class="contenedor_respuesta">
+            <img class="muñeco" src="src/img/muñeco.png" alt="Una imgagen de un muñeco">
+            <textarea class="respuesta" placeholder="Ningún mensaje fue encontrado" id=""></textarea>
+            <p class="parrafo_respuesta">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button id="copiar" class="copiar boton">Copiar</button>
+        </main>
+    </section>
+    <footer>
+        <p>Javier Alejandro Cuervo Rossetti</p>
+        <a class="enlaces" href="https://github.com/javierossetti">GitHub
+            <img class="logo_footer" src="src/img/github.png" alt="Logo de Github">
+        </a>
+        <a class="enlaces" href="https://www.linkedin.com/in/javier-alejandro-cuervo-rossetti/">LinkedIn
+            <img class="logo_footer" src="src/img/linkedin.png" alt="Logo de Linkedin">
+        </a>
+    </footer>
+    <script src="./src/js/app.js"></script>
+</body>
+</html>
